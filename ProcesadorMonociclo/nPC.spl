@@ -1,0 +1,7 @@
+[Inputs]
+CLK
+Reset
+=SalidaSumador[31:0]=
+[Outputs]
+=SalidaNpc[31:0]=
+[BiDir]

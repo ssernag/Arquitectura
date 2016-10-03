@@ -1,0 +1,7 @@
+[Inputs]
+CLK
+Reset
+=SalidaNpc[31:0]=
+[Outputs]
+=SalidaPC[31:0]=
+[BiDir]
