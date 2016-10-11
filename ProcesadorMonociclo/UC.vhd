@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    22:45:21 10/01/2016 
+-- Create Date:    22:27:28 10/10/2016 
 -- Design Name: 
 -- Module Name:    UC - Behavioral 
 -- Project Name: 
@@ -30,15 +30,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity UC is
-    Port ( OP : in  STD_LOGIC;
-           Op3 : in  STD_LOGIC;
-           SalidaUc : out  STD_LOGIC_VECTOR (5 downto 0));
+    Port ( op : in  STD_LOGIC_VECTOR (1 downto 0);
+           op3 : in  STD_LOGIC_VECTOR (5 downto 0);
+           OutUC : out  STD_LOGIC_VECTOR (5 downto 0));
 end UC;
 
 architecture Behavioral of UC is
 
 begin
 
+process (op,op3)
+ begin 
+    if (op='10') then
+	   case op3 is
+	   when '00000' => OutUC <= '000000';
+	   when '00001' => OutUC <= '000010';
+	   end case;
+	end if;	
+end process;	
 
 end Behavioral;
 

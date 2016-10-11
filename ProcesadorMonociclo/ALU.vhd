@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    22:35:31 10/01/2016 
+-- Create Date:    23:09:16 10/10/2016 
 -- Design Name: 
--- Module Name:    RF - Behavioral 
+-- Module Name:    ALU - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,28 +29,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity RF is
-    Port ( Rd : in  STD_LOGIC_VECTOR (4 downto 0);
-           Rs1 : in  STD_LOGIC_VECTOR (4 downto 0);
-           Rs2 : in  STD_LOGIC_VECTOR (4 downto 0);
-           Crs1 : out  STD_LOGIC_VECTOR (32 downto 0);
-           Crs2 : out  STD_LOGIC_VECTOR (32 downto 0));
-			  
-end RF;
+entity ALU is
+    Port ( Crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           Crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           OutUC : in  STD_LOGIC_VECTOR (5 downto 0);
+           OutAlu : in  STD_LOGIC_VECTOR (31 downto 0));
+end ALU;
 
-architecture Behavioral of RF is
+architecture Behavioral of ALU is
 
 begin
-  process(Rd,Rs1,Rs2)
-	begin
-		
-	if (Rd /= 00000) then
-	   myreg(con_integer(Rd))<=dwr;
-   end if; 
-	  (myreg(Conv_integer(Rs1)))<=Crs1;
-	  Crs2<=(myreg(Conv_integer(Rs2)));
-	  
-	end process;
+  process (Crs1,Crs2,OutUC)
+     begin
+	    if (OutUC ="000000") then
+		  OutAlu<=Crs1 + Crs2;
+		 end if;
+	end process;	 
+  
 
 
 end Behavioral;

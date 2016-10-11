@@ -39,6 +39,10 @@ architecture Behavioral of ADDER is
 
 begin
 
+   process
+      begin   
+
+
 
 end Behavioral;
 

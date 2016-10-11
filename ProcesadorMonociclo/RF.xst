@@ -1,5 +1,5 @@
 set -tmpdir "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/xst/projnav.tmp"
 set -xsthdpdir "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/xst"
 elaborate
--ifn nPC.prj
+-ifn RF.prj
 -ifmt mixed
