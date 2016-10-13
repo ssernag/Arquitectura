@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/testbenchProcesador1_isim_beh.exe" -prj "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/testbenchProcesador1_beh.prj" "work.testbenchProcesador1" 

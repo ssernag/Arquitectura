@@ -1,0 +1,8 @@
+vhdl isim_temp "UC.vhd"
+vhdl isim_temp "RF.vhd"
+vhdl isim_temp "nPC.vhd"
+vhdl isim_temp "IM.vhd"
+vhdl isim_temp "ALU.vhd"
+vhdl isim_temp "ADDER.vhd"
+vhdl isim_temp "Procesador1.vhd"
+vhdl isim_temp "testbenchProcesador1.vhd"

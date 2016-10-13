@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,22 +34,26 @@ entity RF is
     Port ( Rd : in  STD_LOGIC_VECTOR (4 downto 0);
            Rs1 : in  STD_LOGIC_VECTOR (4 downto 0);
            Rs2 : in  STD_LOGIC_VECTOR (4 downto 0);
-           Crs1 : out  STD_LOGIC_VECTOR (32 downto 0);
-           Crs2 : out  STD_LOGIC_VECTOR (32 downto 0));
-			  
+           Crs1 : out  STD_LOGIC_VECTOR (31 downto 0);
+           Crs2 : out  STD_LOGIC_VECTOR (31 downto 0);
+			  dwr  :in STD_LOGIC_VECTOR (31 downto 0);
+			  Reset : in  STD_LOGIC);
 end RF;
 
 architecture Behavioral of RF is
 
+type ram_type is array (0 to 39) of std_logic_vector (31 downto 0);
+signal myreg : ram_type :=(others => x"00000000");
+
 begin
-  process(Rd,Rs1,Rs2)
+  process(Rd,Rs1,Rs2,dwr)
 	begin
 		
-	if (Rd /= 00000) then
-	   myreg(con_integer(Rd))<=dwr;
+	if (Rd /= "000000") then
+	   myreg(conv_integer(Rd))<=dwr;
    end if; 
-	  (myreg(Conv_integer(Rs1)))<=Crs1;
-	  Crs2<=(myreg(Conv_integer(Rs2)));
+	  Crs1<=myreg(Conv_integer(Rs1));
+	  Crs2<=myreg(Conv_integer(Rs2));
 	  
 	end process;
 

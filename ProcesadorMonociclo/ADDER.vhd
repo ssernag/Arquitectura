@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -30,18 +31,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ADDER is
-    Port ( In : in  STD_LOGIC_VECTOR (3 downto 0);
+    Port ( In1 : in  STD_LOGIC_VECTOR (3 downto 0);
            SalidaPC : in  STD_LOGIC_VECTOR (31 downto 0);
-           SalidaSumador : out  STD_LOGIC_VECTOR (32 downto 0));
+           SalidaSumador : out  STD_LOGIC_VECTOR (31 downto 0));
 end ADDER;
 
 architecture Behavioral of ADDER is
 
 begin
 
-   process
+   process(In1,SalidaPC)
       begin   
-
+           SalidaSumador<= In1 + SalidaPC;
+	end process;		  
 
 
 end Behavioral;

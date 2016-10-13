@@ -41,10 +41,20 @@ begin
 
 process (op,op3)
  begin 
-    if (op='10') then
+    if (op="10") then
 	   case op3 is
-	   when '00000' => OutUC <= '000000';
-	   when '00001' => OutUC <= '000010';
+	   when "000001"=>--And
+		     OutUC <="000000";
+	   when "000010"=> --OR
+		     OutUC <="000001";
+		when "000011"=> --XOr
+		     OutUC <="000011";
+		when "000000"=>-- ADD
+		     OutUC <="000111";	
+		when "000100"=>--SUB
+		      OutUC <="001111";	
+      when others=>
+            OutUC <="111111";		
 	   end case;
 	end if;	
 end process;	

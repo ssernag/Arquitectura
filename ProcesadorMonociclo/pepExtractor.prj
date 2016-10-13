@@ -1,1 +1,7 @@
-work	"PC.vhd"
+work	"ADDER.vhd"
+work	"ALU.vhd"
+work	"IM.vhd"
+work	"Procesador1.vhd"
+work	"RF.vhd"
+work	"UC.vhd"
+work	"nPC.vhd"

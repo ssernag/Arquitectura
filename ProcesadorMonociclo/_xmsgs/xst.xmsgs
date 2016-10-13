@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="Xst" num="2587" delta="old" >Port &lt;<arg fmt="%s" index="1">SalidaSumador</arg>&gt; of instance &lt;<arg fmt="%s" index="2">Inst_ADDER</arg>&gt; has different type in definition &lt;<arg fmt="%s" index="3">ADDER</arg>&gt;.
+</msg>
+
 </messages>
 

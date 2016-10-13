@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -19,25 +19,17 @@ Total CPU time to Xst completion: 0.21 secs
 =========================================================================
 Compiling vhdl file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" in Library work.
 Entity <rf> compiled.
-ERROR:HDLParsers:808 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 47. /= can not have such operands in this context.
-ERROR:HDLParsers:3312 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 48. Undefined symbol 'myreg'.
-ERROR:HDLParsers:1209 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 48. myreg: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 48. Undefined symbol 'con_integer'.
-ERROR:HDLParsers:1209 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 48. con_integer: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 48. Undefined symbol 'dwr'.
-ERROR:HDLParsers:1209 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 48. dwr: Undefined symbol (last report in this block)
-ERROR:HDLParsers:800 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 50. Type of myreg is incompatible with type of Crs1.
-ERROR:HDLParsers:800 - "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" Line 51. Type of Crs2 is incompatible with type of myreg.
+Entity <RF> (Architecture <Behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> 
 
-Total memory usage is 245436 kilobytes
+Total memory usage is 261080 kilobytes
 
-Number of errors   :    9 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

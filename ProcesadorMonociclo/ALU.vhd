@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -33,7 +34,7 @@ entity ALU is
     Port ( Crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
            Crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
            OutUC : in  STD_LOGIC_VECTOR (5 downto 0);
-           OutAlu : in  STD_LOGIC_VECTOR (31 downto 0));
+           OutAlu : out  STD_LOGIC_VECTOR (31 downto 0));
 end ALU;
 
 architecture Behavioral of ALU is
@@ -41,9 +42,13 @@ architecture Behavioral of ALU is
 begin
   process (Crs1,Crs2,OutUC)
      begin
-	    if (OutUC ="000000") then
+	    if (OutUC ="000111") then
 		  OutAlu<=Crs1 + Crs2;
-		 end if;
+		 else
+         if (OutUC="001111") then
+           OutAlu <=Crs1 - Crs2;			  
+		   end if;
+		 end if;	
 	end process;	 
   
 

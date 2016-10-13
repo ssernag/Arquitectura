@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1196" delta="unknown" >"C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/IM.vhd" Line 53: Readline called past the end of file <arg fmt="%s" index="1">romfile</arg>
+</msg>
+
 </messages>
 
