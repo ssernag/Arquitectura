@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Procesador2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADDER.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ADDER.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ADDER.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplexor.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplexor.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Multiplexor.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RF.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RF.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RF.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SEU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SEU.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SEU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="UC.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="UC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="instructionMemory.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="instructionMemory.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="instructionMemory.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="nPC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="nPC.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="nPC.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1476763910" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1476763910">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476764508" xil_pn:in_ck="2694077482856822268" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476764508">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../ProcesadorMonociclo/ADDER.vhd"/>
+      <outfile xil_pn:name="../ProcesadorMonociclo/ALU.vhd"/>
+      <outfile xil_pn:name="../ProcesadorMonociclo/IM.vhd"/>
+      <outfile xil_pn:name="../ProcesadorMonociclo/RF.vhd"/>
+      <outfile xil_pn:name="../ProcesadorMonociclo/UC.vhd"/>
+      <outfile xil_pn:name="../ProcesadorMonociclo/nPC.vhd"/>
+      <outfile xil_pn:name="Multiplexor.vhd"/>
+      <outfile xil_pn:name="SEU.vhd"/>
+      <outfile xil_pn:name="tb-SEU.vhd"/>
+      <outfile xil_pn:name="tb_ALU.vhd"/>
+      <outfile xil_pn:name="tb_Adder.vhd"/>
+      <outfile xil_pn:name="tb_IM.vhd"/>
+      <outfile xil_pn:name="tb_NPc.vhd"/>
+      <outfile xil_pn:name="tb_RF.vhd"/>
+      <outfile xil_pn:name="tb_UC.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1476763910" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1476763910">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476763910" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3418866178078708973" xil_pn:start_ts="1476763910">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476763910" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1902483930075543153" xil_pn:start_ts="1476763910">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>
