@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file RF.vhd -- 18:06:40 10/18/2016
+-- VHDL Instantiation Created from source file RF.vhd -- 18:45:33 10/23/2016
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types

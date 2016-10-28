@@ -32,17 +32,26 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ProcesadorIMM is
     Port ( Reset : in  STD_LOGIC;
            CLK : in  STD_LOGIC;
-           OUTP : in  STD_LOGIC_VECTOR (31 downto 0));
+           OUTP : out  STD_LOGIC_VECTOR (31 downto 0));
 end ProcesadorIMM;
 
-architecture Behavioral of ProcesadorIMM is
+architecture arq_ProcesadorIMM of ProcesadorIMM is
 
 
 COMPONENT ADDER
 	PORT(
-		In1 : IN std_logic_vector(3 downto 0);
+		In1 : IN std_logic_vector(31 downto 0);
 		SalidaPC : IN std_logic_vector(31 downto 0);          
 		SalidaSumador : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
+		COMPONENT nPC
+	PORT(
+		SalidaSumador : IN std_logic_vector(31 downto 0);
+		CLK : IN std_logic;
+		Reset : IN std_logic;          
+		SalidaNpc : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
 	
@@ -69,6 +78,18 @@ COMPONENT ADDER
 		);
 	END COMPONENT;
 	
+		COMPONENT RF
+	PORT(
+		Rd : IN std_logic_vector(4 downto 0);
+		Rs1 : IN std_logic_vector(4 downto 0);
+		Rs2 : IN std_logic_vector(4 downto 0);
+		dwr : IN std_logic_vector(31 downto 0);
+		Reset : IN std_logic;          
+		Crs1 : OUT std_logic_vector(31 downto 0);
+		Crs2 : OUT std_logic_vector(31 downto 0)
+		);
+	END COMPONENT;
+	
 	COMPONENT Multiplexor
 	PORT(
 		i : IN std_logic;
@@ -88,13 +109,13 @@ COMPONENT ADDER
 	END COMPONENT;
 
 	
-	signal sumadorToNpc, NPcToIM,IMToURS,ALUOut,RFToALU,RFToMUX,MUXtoALU:STD_LOGIC_VECTOR (31 downto 0); 
+signal sumadorToNpc, NPcToIM,IMToURS,ALUOut,RFToALU,RFToMUX,MUXtoALU,SEUtoMUX:STD_LOGIC_VECTOR (31 downto 0); 
 signal OUC:STD_LOGIC_VECTOR (5 downto 0);
-signal SEUtoMUX:STD_LOGIC_VECTOR (12 downto 0);
+
 begin
 
 	Inst_ADDER: ADDER PORT MAP(
-		In1 =>"0001" ,
+		In1 =>X"00000001" ,
 		SalidaPC => NPcToIM,
 		SalidaSumador => sumadorToNpc
 	);
@@ -130,12 +151,12 @@ begin
 	);
 
 	Inst_SEU: SEU PORT MAP(
-		IMM13Bits => ,
+		IMM13Bits =>IMToURS(12 downto 0),
 		Out_SEU => SEUtoMUX
 	);
 	
 		Inst_Multiplexor: Multiplexor PORT MAP(
-		i => ,
+		i => IMToURS(13),
 		Out_SEU => SEUtoMUX,
 		Crs2 => RFToMUX,
 		Out_MUX =>MUXtoALU 
@@ -143,10 +164,11 @@ begin
 	
 		Inst_ALU: ALU PORT MAP(
 		Crs1 =>RFToALU ,
-		Crs2 =>RFToMUX ,
+		Crs2 =>MUXtoALU ,
 		OutUC =>OUC ,
 		OutAlu => ALUOut
 	);
+	OUTP<=ALUOut;
 
-end Behavioral;
+end arq_ProcesadorIMM;
 

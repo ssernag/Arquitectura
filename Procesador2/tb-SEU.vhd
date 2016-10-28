@@ -32,10 +32,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY tb-SEU IS
-END tb-SEU;
+ENTITY tb_SEU IS
+END tb_SEU;
  
-ARCHITECTURE behavior OF tb-SEU IS 
+ARCHITECTURE behaviorial OF tb_SEU IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
