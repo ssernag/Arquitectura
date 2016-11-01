@@ -1,0 +1,66 @@
+V3 27
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador2/Multiplexor.vhd" 2016/10/27.22:16:49 P.20131013
+EN work/Multiplexor 1477980778 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador2/Multiplexor.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Multiplexor/arq_MUX 1477980779 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador2/Multiplexor.vhd" \
+      EN work/Multiplexor 1477980778
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador2/SEU.vhd" 2016/10/27.22:17:28 P.20131013
+EN work/SEU 1477981795 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador2/SEU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SEU/arq_SEU 1477981796 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador2/SEU.vhd" \
+      EN work/SEU 1477981795
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSR.vhd" 2016/11/01.01:05:34 P.20131013
+EN work/PSR 1477981778 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSR.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/PSR/arq_PSR 1477981779 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSR.vhd" \
+      EN work/PSR 1477981778
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSRModifier.vhd" 2016/11/01.01:29:26 P.20131013
+EN work/PSRModifier 1477981770 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSRModifier.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB std/TEXTIO 1381692176
+AR work/PSRModifier/arq_PSRModifier 1477981771 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSRModifier.vhd" \
+      EN work/PSRModifier 1477981770
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/ALU.vhd" 2016/10/27.22:18:52 P.20131013
+EN work/ALU 1477980762 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU/arq_ALU 1477980763 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/ALU.vhd" \
+      EN work/ALU 1477980762
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/IM.vhd" 2016/10/27.21:26:34 P.20131013
+EN work/instructionMemory 1477981807 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/IM.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB std/TEXTIO 1381692176
+AR work/instructionMemory/arqInstructionMemory 1477981808 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/IM.vhd" \
+      EN work/instructionMemory 1477981807
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/nPC.vhd" 2016/10/26.23:46:36 P.20131013
+EN work/nPC 1477981813 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/nPC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/nPC/arq_NPc 1477981814 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/nPC.vhd" \
+      EN work/nPC 1477981813
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" 2016/10/27.22:19:24 P.20131013
+EN work/RF 1477981785 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RF/arq_RF 1477981786 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/RF.vhd" \
+      EN work/RF 1477981785
+FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/UC.vhd" 2016/10/27.22:40:53 P.20131013
+EN work/UC 1477981801 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/UC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/UC/arq_UC 1477981802 \
+      FL "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/ProcesadorMonociclo/UC.vhd" \
+      EN work/UC 1477981801

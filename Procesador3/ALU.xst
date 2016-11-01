@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/xst"
+elaborate
+-ifn ALU.prj
+-ifmt mixed
