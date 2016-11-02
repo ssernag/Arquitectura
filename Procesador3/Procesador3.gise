@@ -22,34 +22,60 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Procesador3.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ADDER.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ADDER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ADDER.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ADDER.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADDER.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ADDER.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ADDER.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="ADDER.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ADDER.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ADDER_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADDER_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ADDER_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="ALU.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplexor.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplexor.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Multiplexor.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Multiplexor.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PSR.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PSR.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="PSR.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PSR.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PSRModifier.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PSRModifier.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="PSRModifier.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PSRModifier.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Procesador3.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Procesador3.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Procesador3.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RF.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RF.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="RF.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="RF.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SEU.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SEU.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="SEU.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="SEU.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UC.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="UC.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="UC.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="UC.xst"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="instructionMemory.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="instructionMemory.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="instructionMemory.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="instructionMemory.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="nPC.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="nPC.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="nPC.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="nPC.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -95,6 +121,11 @@
       <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1477980740" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-41452171354572806" xil_pn:start_ts="1477980740">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1478060465" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1478060465">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
