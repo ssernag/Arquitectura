@@ -1,0 +1,43 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/tb_procesador3_isim_beh.exe" -prj "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/tb_procesador3_beh.prj" "work.tb_procesador3" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../ProcesadorMonociclo/UC.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../ProcesadorMonociclo/RF.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../ProcesadorMonociclo/nPC.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../ProcesadorMonociclo/IM.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../ProcesadorMonociclo/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../ProcesadorMonociclo/ADDER.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSRModifier.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/PSR.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../Procesador2/SEU.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/../Procesador2/Multiplexor.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/Procesador3.vhd" into library work
+Parsing VHDL file "C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/tb_procesador3.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling architecture arq_adder of entity ADDER [adder_default]
+Compiling architecture arq_npc of entity nPC [npc_default]
+Compiling architecture arqinstructionmemory of entity instructionMemory [instructionmemory_default]
+Compiling architecture arq_uc of entity UC [uc_default]
+Compiling architecture arq_rf of entity RF [rf_default]
+Compiling architecture arq_mux of entity Multiplexor [multiplexor_default]
+Compiling architecture arq_seu of entity SEU [seu_default]
+Compiling architecture arq_alu of entity ALU [alu_default]
+Compiling architecture arq_psr of entity PSR [psr_default]
+Compiling architecture arq_psrmodifier of entity PSRModifier [psrmodifier_default]
+Compiling architecture arq_procesador3 of entity Procesador3 [procesador3_default]
+Compiling architecture behavior of entity tb_procesador3
+Time Resolution for simulation is 1ps.
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 29 VHDL Units
+Built simulation executable C:/Users/CBAS/Desktop/UTP/Laboratorio de electronica/EJERCICIOS/XILINX PROYECTOS 20152 NOVIEMBRE 07/Procesador3/tb_procesador3_isim_beh.exe
+Fuse Memory Usage: 37624 KB
+Fuse CPU Usage: 952 ms
