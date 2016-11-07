@@ -130,9 +130,9 @@ COMPONENT Multiplexor
 	END COMPONENT;
 	
 signal sumadorToNpc, NPcToIM,IMToURS,ALUOut,RFToALU,RFToMUX,MUXtoALU,SEUtoMUX:STD_LOGIC_VECTOR (31 downto 0); 
-signal OUC:STD_LOGIC_VECTOR (5 downto 0);
-signal PSRModifier_PSR: STD_LOGIC_VECTOR(3 downto 0);
-signal PSRToALU: STD_LOGIC := '0';
+signal OUC,OUC2:STD_LOGIC_VECTOR (5 downto 0);
+signal PSRModifier_PSR,PSRModifier_PSR2: STD_LOGIC_VECTOR(3 downto 0);
+signal PSRToALU: STD_LOGIC;
 
 
 begin
@@ -174,42 +174,43 @@ begin
 		Reset => Reset
 	);
 	
+	   Inst_Multiplexor: Multiplexor PORT MAP(
+		i => IMToURS(13),
+		Out_SEU => RFToMUX,
+		Crs2 =>SEUtoMUX ,
+		Out_MUX =>MUXtoALU 
+	);
+	
 		Inst_SEU: SEU PORT MAP(
 		IMM13Bits =>IMToURS(12 downto 0),
 		Out_SEU => SEUtoMUX
 	);
 	
-	
-			Inst_Multiplexor: Multiplexor PORT MAP(
-		i => IMToURS(13),
-		Out_SEU => SEUtoMUX,
-		Crs2 => RFToMUX,
-		Out_MUX =>MUXtoALU 
+		Inst_ALU: ALU PORT MAP(
+		Crs1 =>RFToALU  ,
+		Crs2 => MUXtoALU,
+		Carry =>PSRToALU ,
+		OutUC =>OUC ,
+		OutAlu => ALUOut
 	);
-	
-			Inst_PSR: PSR PORT MAP(
+
+		Inst_PSR: PSR PORT MAP(
 		CLK => CLK,
 		Reset =>Reset ,
 		NZVC => PSRModifier_PSR,
-		Carry =>PSRtoALU 
+		Carry =>PSRToALU 
 	);
 	
 		Inst_PSRModifier: PSRModifier PORT MAP(
 		OutUC =>OUC ,
-		Crs1 =>RFToALU ,
-		Crs2 => MUXtoALU ,
+		Crs1 =>RFToALU,
+		Crs2 => MUXtoALU,
 		Reset => Reset,
 		OutALU => ALUOut,
-		NZVC => PSRModifier_PSR
+		NZVC => PSRModifier_PSR2
 	);
 	
-	Inst_ALU: ALU PORT MAP(
-		Crs1 =>RFToALU  ,
-		Crs2 => MUXtoALU,
-		Carry =>PSRtoALU ,
-		OutUC =>OUC ,
-		OutAlu => ALUOut
-	);
+
 	
 OUTP3<=ALUOut;	
 

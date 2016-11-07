@@ -68,16 +68,54 @@ BEGIN
           OutUC => OutUC
         );
 
-   -- Clock process definitions
-   <clock>_process :process
-   begin
-		
-   end process;
+   
  
 
    -- Stimulus process
    stim_proc: process
-   begin		
+   begin	
+
+      op <= "10";
+		op3<="000000";
+		wait for 20 ns;
+		op3<="010000";
+		wait for 20 ns;
+		op3<="011000";
+		wait for 20 ns;
+		op3<="001000";
+		wait for 20 ns;
+		op3<="000100";
+		wait for 20 ns;
+		op3<="010100";
+		wait for 20 ns;
+		op3<="001100";
+		wait for 20 ns;
+		op3<="011100";
+		wait for 20 ns;
+		op3<="000001";
+		wait for 20 ns;
+		op3<="000101";
+		wait for 20 ns;
+		op3<="010101";
+		wait for 20 ns;
+		op3<="010001";
+		wait for 20 ns;
+		op3<="000010";
+		wait for 20 ns;
+		op3<="000110";
+		wait for 20 ns;
+		op3<="010010";
+		wait for 20 ns;
+		op3<="010110";
+		wait for 20 ns;
+		op3<="000011";
+		wait for 20 ns;
+		op3<="000111";
+		wait for 20 ns;
+		op3<="010011";
+		wait for 20 ns;
+		op3<="010111";
+wait for 20 ns;	
      
    end process;
 

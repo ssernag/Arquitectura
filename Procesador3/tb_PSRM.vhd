@@ -79,8 +79,7 @@ BEGIN
 
    -- Clock process definitions
  
-   begin
-		
+   
  
 
    -- Stimulus process

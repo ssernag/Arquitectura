@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF tb_MUX IS
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
-   constant <clock>_period : time := 10 ns;
+ 
  
 BEGIN
  
@@ -71,8 +71,6 @@ BEGIN
           Out_MUX => Out_MUX
         );
 
-   -- Clock process definitions
-   <clock>_process :process
-   begin
+   
 		
 END;

@@ -65,7 +65,7 @@ ARCHITECTURE behavior OF tb_RF IS
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
-   constant <clock>_period : time := 10 ns;
+
  
 BEGIN
  
@@ -79,13 +79,6 @@ BEGIN
           dwr => dwr,
           Reset => Reset
         );
-
-   -- Clock process definitions
-   <clock>_process :process
-   begin
-		
-   end process;
- 
 
    -- Stimulus process
    stim_proc: process

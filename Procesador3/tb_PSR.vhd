@@ -83,12 +83,15 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      wait for CLK_period*10;
-
-      -- insert stimulus here 
+       Reset <='1';
+		NZVC <="0010";
+		wait for 50 ns;
+		Reset<='0';
+		NZVC<="1010";
+		wait for 50 ns;
+		NZVC<="1110";
+		wait for 50 ns;
+      NZVC<="0101";
 
       wait;
    end process;
