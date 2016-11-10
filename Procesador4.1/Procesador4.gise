@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Procesador4.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="PSR.vhi"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="WindowsManager.vhi"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_procesador3_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1478744441" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1478744441">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1478749741" xil_pn:in_ck="-1235929364945887395" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1478749741">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../Procesador31/tb_procesador3.vhd"/>
+      <outfile xil_pn:name="ADDER.vhd"/>
+      <outfile xil_pn:name="ALU.vhd"/>
+      <outfile xil_pn:name="IM.vhd"/>
+      <outfile xil_pn:name="Multiplexor.vhd"/>
+      <outfile xil_pn:name="PSR.vhd"/>
+      <outfile xil_pn:name="PSRModifier.vhd"/>
+      <outfile xil_pn:name="Procesador3.vhd"/>
+      <outfile xil_pn:name="RF.vhd"/>
+      <outfile xil_pn:name="SEU.vhd"/>
+      <outfile xil_pn:name="UC.vhd"/>
+      <outfile xil_pn:name="WindowsManager.vhd"/>
+      <outfile xil_pn:name="nPC.vhd"/>
+      <outfile xil_pn:name="tb_IM.vhd"/>
+      <outfile xil_pn:name="tb_RF.vhd"/>
+      <outfile xil_pn:name="tb_SEU.vhd"/>
+      <outfile xil_pn:name="tb_UC.vhd"/>
+      <outfile xil_pn:name="tb_WM.vhd"/>
+      <outfile xil_pn:name="tb_adder.vhd"/>
+      <outfile xil_pn:name="tb_alu.vhd"/>
+      <outfile xil_pn:name="tb_mux.vhd"/>
+      <outfile xil_pn:name="tb_nPc.vhd"/>
+      <outfile xil_pn:name="tb_psr.vhd"/>
+      <outfile xil_pn:name="tb_psrmodifier.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1478746261" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1058861686293692400" xil_pn:start_ts="1478746261">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1478746261" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1004271787526909422" xil_pn:start_ts="1478746261">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1478744441" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8485288418838911516" xil_pn:start_ts="1478744441">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1478749745" xil_pn:in_ck="-1235929364945887395" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1478749745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../Procesador31/tb_procesador3.vhd"/>
+      <outfile xil_pn:name="ADDER.vhd"/>
+      <outfile xil_pn:name="ALU.vhd"/>
+      <outfile xil_pn:name="IM.vhd"/>
+      <outfile xil_pn:name="Multiplexor.vhd"/>
+      <outfile xil_pn:name="PSR.vhd"/>
+      <outfile xil_pn:name="PSRModifier.vhd"/>
+      <outfile xil_pn:name="Procesador3.vhd"/>
+      <outfile xil_pn:name="RF.vhd"/>
+      <outfile xil_pn:name="SEU.vhd"/>
+      <outfile xil_pn:name="UC.vhd"/>
+      <outfile xil_pn:name="WindowsManager.vhd"/>
+      <outfile xil_pn:name="nPC.vhd"/>
+      <outfile xil_pn:name="tb_IM.vhd"/>
+      <outfile xil_pn:name="tb_RF.vhd"/>
+      <outfile xil_pn:name="tb_SEU.vhd"/>
+      <outfile xil_pn:name="tb_UC.vhd"/>
+      <outfile xil_pn:name="tb_WM.vhd"/>
+      <outfile xil_pn:name="tb_adder.vhd"/>
+      <outfile xil_pn:name="tb_alu.vhd"/>
+      <outfile xil_pn:name="tb_mux.vhd"/>
+      <outfile xil_pn:name="tb_nPc.vhd"/>
+      <outfile xil_pn:name="tb_psr.vhd"/>
+      <outfile xil_pn:name="tb_psrmodifier.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1478749748" xil_pn:in_ck="-1235929364945887395" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-9045930608908757246" xil_pn:start_ts="1478749745">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>
